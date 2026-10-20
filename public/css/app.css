@@ -1,0 +1,5 @@
+/* Optional project styles. Tailwind is loaded from its CDN in the Blade view. */
+/* Slightly zoom out the site consistently on every page. */
+body {
+    zoom: 0.9;
+}
