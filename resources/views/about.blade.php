@@ -586,12 +586,6 @@
 <p class="font-body-sm text-body-sm text-inverse-on-surface opacity-80 text-center sm:text-left">
           © 2024 Chick 'n Lick Franchise Systems Inc. All rights reserved. Crafted for craveable crunch.
         </p>
-<div class="flex items-center gap-6">
-<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-primary-container font-bold">
-<span class="w-2 h-2 rounded-full bg-secondary-container inline-block"></span>
-            Philippine Homegrown QSR
-          </span>
-</div>
 </div>
 </div>
 </footer>
