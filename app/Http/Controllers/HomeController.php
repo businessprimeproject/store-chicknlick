@@ -31,6 +31,11 @@ class HomeController extends Controller
         return view('profit-loss');
     }
 
+    public function profitLossStatement()
+    {
+        return view('profit-loss-statement');
+    }
+
     public function thankYou()
     {
         return view('thank-you');
