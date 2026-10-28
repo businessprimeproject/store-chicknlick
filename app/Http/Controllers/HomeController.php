@@ -71,8 +71,12 @@ class HomeController extends Controller
             'consent' => ['accepted'],
         ]);
 
-        Mail::to(config('mail.franchise_inquiry_recipient', 'business.chicknlick@gmail.com'))
-            ->send(new FranchiseInquirySubmitted($request->except(['_token', 'consent'])));
+        try {
+            Mail::to(config('mail.franchise_inquiry_recipient', 'business.chicknlick@gmail.com'))
+                ->send(new FranchiseInquirySubmitted($request->except(['_token', 'consent'])));
+        } catch (\Throwable $exception) {
+            report($exception);
+        }
 
         return redirect()->route('thank-you');
     }
