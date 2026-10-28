@@ -24,6 +24,11 @@
         Your browser does not support embedded video playback.
       </video>
     </div>
+    <div class="mt-8">
+      <a href="{{ route('franchise') }}" class="inline-flex items-center rounded-lg border-2 border-[#1c1b1b] bg-[#fe6a29] px-5 py-3 font-bold text-white shadow-[3px_3px_0_#1c1b1b] transition hover:-translate-y-0.5">
+        ← Back to Franchise
+      </a>
+    </div>
   </main>
 </body>
 </html>
