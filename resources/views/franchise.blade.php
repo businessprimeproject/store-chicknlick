@@ -280,7 +280,7 @@ h1 span, h2 span, h3 span {
     <!-- Media Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="branch-openings-grid">
       <!-- Card 1: Authentic Ribbon Cutting Photo -->
-      <div class="tactile-card bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition-transform group shadow-[4px_4px_0px_#101010]" data-category="photo recent">
+      <div onclick="window.location.href='{{ route('franchise.branch-openings') }}'" role="link" tabindex="0" class="tactile-card cursor-pointer bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition-transform group shadow-[4px_4px_0px_#101010]" data-category="photo recent">
         <div>
           <div class="relative h-60 w-full overflow-hidden border-b-2 border-on-surface bg-surface-container-high">
             <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTzG2k9scuGhRHbALcwz9fJ68ZB5DpaSII7hT4WpmLnBYB36RgMmfaGEdzxI8lUz9t4fXukwoIbgrn5_6UzL6M7lWZ5ve23NsqEm0dt51R-3_WOup22mlok_5JakEA7UbQpsDdP0h-PWSBYDixqJt19E00V13dp2uGOBn9YjQ_9qZEjxqlUF5x6pf4R10guX3oYTPMikepE5TTIcw8r8jA0TzD0eOMRestRit2Wvcl0kTAHhNBfUGTbCOC9EamRk7jHg" alt="Grand opening celebration at Cebu City store" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300">
@@ -306,7 +306,7 @@ h1 span, h2 span, h3 span {
       </div>
 
       <!-- Card 2: Video Highlight Card -->
-      <div class="tactile-card bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition-transform group shadow-[4px_4px_0px_#101010]" data-category="video">
+      <div onclick="window.location.href='{{ asset('videos/chicknlick-reel.MOV') }}'" role="link" tabindex="0" class="tactile-card cursor-pointer bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition-transform group shadow-[4px_4px_0px_#101010]" data-category="video">
         <div>
           <div class="relative h-60 w-full overflow-hidden border-b-2 border-on-surface bg-inverse-surface flex items-center justify-center cursor-pointer">
             <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYg68nRB0NVokiSPzVVomY-sRbYihid6_kITIJh7GNSQ9hnR_BYyJbeb9RkKwoZBn81lknIDu-5NWOhfJHePjVF5qyObjDmHHJ80fXeHtJKli46RcD1RAEwmFBtlas1_fBdzBSIiBMnBluMkZindxDOiI7wh3qiOMuFtJL_VgV8iqjVYqV2Wb-BgIDChYnKtQ7kt-3n9d3QVacMs_vVJSNBNyRmp8lCCu0Ae1OwLlEpj2R5uNv8HOL_tVVsqy47ypPJA" alt="Video thumbnail for Davao launch" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-300">
@@ -339,7 +339,7 @@ h1 span, h2 span, h3 span {
       </div>
 
       <!-- Card 3: Mall Hub Launch -->
-      <div class="tactile-card bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition-transform group shadow-[4px_4px_0px_#101010]" data-category="photo recent">
+      <div onclick="window.location.href='{{ route('franchise.customer-moments') }}'" role="link" tabindex="0" class="tactile-card cursor-pointer bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition-transform group shadow-[4px_4px_0px_#101010]" data-category="photo recent">
         <div>
           <div class="relative h-60 w-full overflow-hidden border-b-2 border-on-surface bg-surface-container-high">
             <img src="{{ asset('images/full-house-full-of-flavor.jpg') }}" alt="Customers enjoying a full house at Chick 'n Lick" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300">
