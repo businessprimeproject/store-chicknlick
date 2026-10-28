@@ -309,7 +309,7 @@ h1 span, h2 span, h3 span {
       <div onclick="window.location.href='{{ route('franchise.video-highlights') }}'" role="link" tabindex="0" class="tactile-card cursor-pointer bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition-transform group shadow-[4px_4px_0px_#101010]" data-category="video">
         <div>
           <div class="relative h-60 w-full overflow-hidden border-b-2 border-on-surface bg-inverse-surface flex items-center justify-center cursor-pointer">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYg68nRB0NVokiSPzVVomY-sRbYihid6_kITIJh7GNSQ9hnR_BYyJbeb9RkKwoZBn81lknIDu-5NWOhfJHePjVF5qyObjDmHHJ80fXeHtJKli46RcD1RAEwmFBtlas1_fBdzBSIiBMnBluMkZindxDOiI7wh3qiOMuFtJL_VgV8iqjVYqV2Wb-BgIDChYnKtQ7kt-3n9d3QVacMs_vVJSNBNyRmp8lCCu0Ae1OwLlEpj2R5uNv8HOL_tVVsqy47ypPJA" alt="Video thumbnail for Davao launch" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-300">
+            <img src="{{ asset('images/chicknlick-reel-thumbnail.jpg') }}" alt="Chick ’n Lick video highlight thumbnail" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-300">
             <!-- Video Play Button Overlay -->
             <div class="absolute inset-0 flex items-center justify-center">
               <div class="w-16 h-16 rounded-full bg-primary-container text-on-surface border-4 border-on-surface flex items-center justify-center shadow-[4px_4px_0px_#101010] transform group-hover:scale-110 transition-transform">
