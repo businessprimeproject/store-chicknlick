@@ -342,7 +342,7 @@ h1 span, h2 span, h3 span {
       <div class="tactile-card bg-surface-container-lowest rounded-2xl overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition-transform group shadow-[4px_4px_0px_#101010]" data-category="photo recent">
         <div>
           <div class="relative h-60 w-full overflow-hidden border-b-2 border-on-surface bg-surface-container-high">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYg68nRB0NVokiSPzVVomY-sRbYihid6_kITIJh7GNSQ9hnR_BYyJbeb9RkKwoZBn81lknIDu-5NWOhfJHePjVF5qyObjDmHHJ80fXeHtJKli46RcD1RAEwmFBtlas1_fBdzBSIiBMnBluMkZindxDOiI7wh3qiOMuFtJL_VgV8iqjVYqV2Wb-BgIDChYnKtQ7kt-3n9d3QVacMs_vVJSNBNyRmp8lCCu0Ae1OwLlEpj2R5uNv8HOL_tVVsqy47ypPJA" alt="Standard Chick 'n Lick Mall Hub Prototype" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300">
+            <img src="{{ asset('images/full-house-full-of-flavor.jpg') }}" alt="Customers enjoying a full house at Chick 'n Lick" class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300">
             <div class="absolute top-3 left-3 bg-primary-container text-on-surface text-xs font-black uppercase px-3 py-1 rounded-full border-2 border-on-surface shadow-[2px_2px_0px_#101010]">
               METRO MANILA • NEW OUTLET
             </div>
