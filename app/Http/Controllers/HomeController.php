@@ -31,6 +31,11 @@ class HomeController extends Controller
         return view('customer-moments');
     }
 
+    public function videoHighlights()
+    {
+        return view('video-highlights');
+    }
+
     public function about()
     {
         return view('about');
