@@ -20,7 +20,7 @@
     <p class="mt-4 text-lg leading-8 text-gray-700">Watch Chick ’n Lick moments, celebrations, and franchise stories right here.</p>
     <div class="mt-10 overflow-hidden rounded-2xl border-2 border-[#1c1b1b] bg-black shadow-[6px_6px_0_#1c1b1b]">
       <video class="aspect-video w-full" controls playsinline preload="metadata">
-        <source src="{{ asset('videos/chicknlick-reel.MOV') }}" type="video/quicktime">
+        <source src="{{ asset('videos/chicknlick-reel.mp4') }}" type="video/mp4">
         Your browser does not support embedded video playback.
       </video>
     </div>
