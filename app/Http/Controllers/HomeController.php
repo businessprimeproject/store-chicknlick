@@ -26,6 +26,11 @@ class HomeController extends Controller
         return view('branch-grand-openings');
     }
 
+    public function customerMoments()
+    {
+        return view('customer-moments');
+    }
+
     public function about()
     {
         return view('about');

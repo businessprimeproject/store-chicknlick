@@ -7,6 +7,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/menu', [HomeController::class, 'menu'])->name('menu');
 Route::get('/franchise', [HomeController::class, 'franchise'])->name('franchise');
 Route::get('/franchise/branch-grand-openings', [HomeController::class, 'branchGrandOpenings'])->name('franchise.branch-openings');
+Route::get('/franchise/customer-moments', [HomeController::class, 'customerMoments'])->name('franchise.customer-moments');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/profit-loss', [HomeController::class, 'profitLoss'])->name('profit-loss');
 Route::get('/profit-loss-statement', [HomeController::class, 'profitLossStatement'])->name('profit-loss.statement');
