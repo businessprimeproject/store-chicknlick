@@ -331,9 +331,9 @@ h1 span, h2 span, h3 span {
             <span class="flex items-center gap-1">
               <span class="material-symbols-outlined text-base">videocam</span> Full HD Video
             </span>
-            <span class="hover:underline inline-flex items-center gap-0.5 cursor-pointer">
+            <a href="{{ asset('videos/chicknlick-reel.MOV') }}" target="_blank" rel="noopener" class="hover:underline inline-flex items-center gap-0.5 cursor-pointer">
               Watch Reel <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </span>
+            </a>
           </div>
         </div>
       </div>
