@@ -2,7 +2,7 @@
 
 return [
 
-    'franchise_inquiry_recipient' => env('FRANCHISE_INQUIRY_EMAIL', 'business.chicknlick@gmail.com'),
+    'franchise_inquiry_recipient' => env('FRANCHISE_INQUIRY_EMAIL', 'cincofloresz09@gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
