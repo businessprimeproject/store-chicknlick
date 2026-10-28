@@ -2,6 +2,8 @@
 
 return [
 
+    'franchise_inquiry_recipient' => env('FRANCHISE_INQUIRY_EMAIL', 'business.chicknlick@gmail.com'),
+
     /*
     |--------------------------------------------------------------------------
     | Default Mailer

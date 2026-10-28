@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\FranchiseInquirySubmitted;
 
 class HomeController extends Controller
 {
@@ -68,6 +70,9 @@ class HomeController extends Controller
             'message' => ['nullable', 'string', 'max:2000'],
             'consent' => ['accepted'],
         ]);
+
+        Mail::to(config('mail.franchise_inquiry_recipient', 'business.chicknlick@gmail.com'))
+            ->send(new FranchiseInquirySubmitted($request->except(['_token', 'consent'])));
 
         return redirect()->route('thank-you');
     }
