@@ -21,5 +21,7 @@ services:
         value: /var/www/html/database/database.sqlite
       - key: MAIL_MAILER
         value: log
+      - key: SESSION_SECURE_COOKIE
+        value: "true"
       - key: FRANCHISE_INQUIRY_EMAIL
         value: cincofloresz09@gmail.com
