@@ -767,7 +767,7 @@ h1 span, h2 span, h3 span {
               Fill out the details below. Our corporate business development manager will reach out with the official Franchise Kit &amp; ROI projections.
             </p>
 </div>
-<form class="space-y-6" id="inquiryForm" method="POST" action="{{ route('franchise.inquiry') }}">
+<form class="space-y-6" id="inquiryForm" method="POST" action="/franchise-inquiry">
 @csrf
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <!-- Full Name -->
