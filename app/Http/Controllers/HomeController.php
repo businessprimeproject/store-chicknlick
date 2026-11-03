@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\FranchiseInquirySubmitted;
+use App\Models\FranchiseInquiry;
 
 class HomeController extends Controller
 {
@@ -71,9 +72,18 @@ class HomeController extends Controller
             'consent' => ['accepted'],
         ]);
 
+        $inquiry = FranchiseInquiry::create([
+            'full_name' => $request->string('fullName')->toString(),
+            'contact_number' => $request->string('mobileNumber')->toString(),
+            'email' => $request->string('email')->toString(),
+            'preferred_location' => $request->string('cityMunicipality')->toString(),
+            'investment_budget' => $request->string('budget')->toString(),
+            'message' => $request->input('message'),
+        ]);
+
         try {
             Mail::to(config('mail.franchise_inquiry_recipient', 'business.chicknlick@gmail.com'))
-                ->send(new FranchiseInquirySubmitted($request->except(['_token', 'consent'])));
+                ->send(new FranchiseInquirySubmitted($inquiry->toArray()));
         } catch (\Throwable $exception) {
             report($exception);
         }

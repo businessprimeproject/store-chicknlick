@@ -25,3 +25,7 @@ services:
         value: "true"
       - key: FRANCHISE_INQUIRY_EMAIL
         value: cincofloresz09@gmail.com
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
