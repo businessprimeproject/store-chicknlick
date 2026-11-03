@@ -23,6 +23,10 @@ services:
         value: log
       - key: SESSION_SECURE_COOKIE
         value: "true"
+      - key: SESSION_HTTP_ONLY
+        value: "true"
+      - key: SESSION_SAME_SITE
+        value: lax
       - key: FRANCHISE_INQUIRY_EMAIL
         value: cincofloresz09@gmail.com
       - key: ADMIN_EMAIL

@@ -20,7 +20,9 @@ Route::post('/generate', [HomeController::class, 'generate'])->name('generate');
 
 Route::middleware('guest')->group(function () {
     Route::get('/admin/login', [AdminAuthController::class, 'create'])->name('admin.login');
-    Route::post('/admin/login', [AdminAuthController::class, 'store'])->name('admin.login.store');
+    Route::post('/admin/login', [AdminAuthController::class, 'store'])
+        ->middleware('throttle:6,1')
+        ->name('admin.login.store');
 });
 
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
