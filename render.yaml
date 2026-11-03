@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: store-chicknlick
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_URL
+        value: https://store-chicknlick.onrender.com
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: DB_DATABASE
+        value: /var/www/html/database/database.sqlite
+      - key: MAIL_MAILER
+        value: log
+      - key: FRANCHISE_INQUIRY_EMAIL
+        value: cincofloresz09@gmail.com
